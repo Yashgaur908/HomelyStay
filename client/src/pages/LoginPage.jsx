@@ -2,6 +2,7 @@ import { Link, Navigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import axios from "axios";
 import { UserContext } from "../UserContext";
+import { config } from "../App";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const { data } = await axios.post("http://localhost:4000/login", { email:email, password:password });
+      const { data } = await axios.post(`${config.backend}/login`, { email:email, password:password });
       setUser(data);
       alert("Login successful");
       setRedirect(true);

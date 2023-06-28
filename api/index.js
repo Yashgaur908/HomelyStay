@@ -24,7 +24,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 const corsOptions = {
-  origin: 'http://localhost:5173', // Replace with the actual origin URL of your frontend application
+  // origin: 'http://localhost:5173', // Replace with the actual origin URL of your frontend application
+  origin: 'https://homelystay.netlify.app',
   credentials: true, // Allow requests with credentials
 };
 

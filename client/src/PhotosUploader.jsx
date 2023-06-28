@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { config } from "./App";
 
 const PhotosUploader = ({ addedPhotos, onChange }) => {
   const [photoLink, setPhotoLink] = useState("");
@@ -74,7 +75,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
           addedPhotos.map((link, index) => (
             <div key={index} className="h-32 flex relative">
               <img
-                src={"http://localhost:4000/uploads/" + link}
+                src={`${config.backend}/uploads/` + link}
                 alt="photo"
                 className="rounded-2xl w-full object-cover"
               />

@@ -1,7 +1,8 @@
 {
   
   "scripts": {
-  "server": "nodemon server"
+  "server": "nodemon server",
+  "start":"nodemon index.js"
 },
   "dependencies": {
     "bcryptjs": "^2.4.3",

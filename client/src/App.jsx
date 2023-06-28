@@ -12,10 +12,13 @@ import PlacesFormPages from "./pages/PlacesFormPages";
 import PlacePage from "./pages/PlacePage";
 import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
-const REACT_APP_API_URL='http://localhost:4000'
+// const REACT_APP_API_URL = 'http://localhost:4000'
+const REACT_APP_API_URL = 'https://homelystay.onrender.com'
 
 axios.defaults.baseURL = `${REACT_APP_API_URL}`;
 axios.defaults.withCredentials = true;
+
+export const config = { backend: "https://homelystay.onrender.com" };
 
 function App() {
   return (

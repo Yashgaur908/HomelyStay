@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import { config } from "../App";
 
 const RegisterPage = () => {
   const [name, setName] = useState("");
@@ -10,7 +11,7 @@ const RegisterPage = () => {
   async function registerUser(e) {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4000/register", {
+      await axios.post(`${config.backend}/register`, {
         name:name,
         email:email,
         password:password,
