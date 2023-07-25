@@ -75,11 +75,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
           addedPhotos.map((link, index) => (
             <div key={index} className="h-32 flex relative">
               <img
-<<<<<<< HEAD
                 src={`${config.backend}/` + link}
-=======
-                src={`${config.backend}/${link}`}
->>>>>>> 4c7d5f774d6e8807cccb6ef78ead9387a913eb8d
                 alt="photo"
                 className="rounded-2xl w-full object-cover"
               />

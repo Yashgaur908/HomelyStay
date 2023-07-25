@@ -91,7 +91,7 @@ const PlacePage = () => {
           {place?.photos?.length > 0 &&
             place.photos.map((photo) => (
               <div>
-                <img src={`${config.backend}/uploads/` + photo} alt="" />
+                <img src={`${config.backend}/` + photo} alt="" />
               </div>
             ))}
         </div>
@@ -137,7 +137,7 @@ const PlacePage = () => {
             {place.photos?.[0] && (
               <div className="">
                 <img
-                  src={`${config.backend}/uploads/` + place.photos?.[0]}
+                  src={`${config.backend}/` + place.photos?.[0]}
                   alt="photo"
                   className="aspect-square object-cover w-full h-[600px]"
                 />
@@ -147,7 +147,7 @@ const PlacePage = () => {
           <div className="grid">
             {place.photos?.[1] && (
               <img
-                src={`${config.backend}/uploads/`  + place.photos?.[1]}
+                src={`${config.backend}/`  + place.photos?.[1]}
                 alt="photo"
                 className="aspect-square object-cover h-[300px]"
               />
@@ -155,7 +155,7 @@ const PlacePage = () => {
             {place.photos?.[2] && (
               <div className="overflow-hidden">
                 <img
-                  src={`${config.backend}/uploads/` + place.photos?.[2]}
+                  src={`${config.backend}/` + place.photos?.[2]}
                   alt="photo"
                   className="aspect-square object-cover relative top-2 h-[300px]"
                 />

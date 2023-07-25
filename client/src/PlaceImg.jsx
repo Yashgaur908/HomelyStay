@@ -10,7 +10,7 @@ const PlaceImg = ({ place, index = 0, className = null }) => {
 
   return (
     <img
-      src={`${config.backend}/uploads/` + place.photos[index]}
+      src={`${config.backend}/` + place.photos[index]}
       alt="photos"
       className={className}
     />

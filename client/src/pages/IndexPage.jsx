@@ -86,7 +86,7 @@ const IndexPage = () => {
               {place.photos?.[0] && (
                 <img
                   className="rounded-2xl object-cover aspect-square "
-                  src={`${config.backend}/uploads/` + place.photos?.[0]}
+                  src={`${config.backend}/` + place.photos?.[0]}
                   alt="photo"
                 />
               )}
