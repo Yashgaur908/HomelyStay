@@ -83,6 +83,7 @@ const IndexPage = () => {
         places.map((place, index) => (
           <Link to={"/place/" + place._id} key={index}>
             <div className="bg-gray-500 rounded-2xl flex mb-2">
+              console.log(${config.backend}/` + place.photos?.[0])
               {place.photos?.[0] && (
                 <img
                   className="rounded-2xl object-cover aspect-square "
